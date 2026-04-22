@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pancake House</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fff8f0;
+    }
+
+    header {
+        background: #ff8c42;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background: #333;
+    }
+
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: block;
+    }
+
+    nav a:hover {
+        background: #ff8c42;
+    }
+
+    .hero {
+        background: url('https://images.unsplash.com/photo-1550317138-10000687a72b') no-repeat center/cover;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    .section {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+
+    button {
+        background: #ff8c42;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background: #e6762f;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    🥞 Pancake House
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    Delicious Pancakes Everyday!
+</div>
+
+<div class="section" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1587731453677-1c9cb3f7d3c2">
+            <h3>Classic Pancake</h3>
+            <p>$5.99</p>
+            <button onclick="order('Classic Pancake')">Order</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439">
+            <h3>Chocolate Pancake</h3>
+            <p>$7.99</p>
+            <button onclick="order('Chocolate Pancake')">Order</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505253716362-afaea6c2c6af">
+            <h3>Berry Pancake</h3>
+            <p>$8.99</p>
+            <button onclick="order('Berry Pancake')">Order</button>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="about">
+    <h2>About Us</h2>
+    <p>We serve the fluffiest and most delicious pancakes made with love and fresh ingredients.</p>
+</div>
+
+<div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@pancakehouse.com</p>
+    <p>Phone: +91 9876543210</p>
+</div>
+
+<footer>
+    © 2026 Pancake House | All Rights Reserved
+</footer>
+
+<script>
+function order(item) {
+    alert("You ordered: " + item);
+}
+</script>
+
+</body>
+</html>
